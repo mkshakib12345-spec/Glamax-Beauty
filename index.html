@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff3f4">
+  <meta name="description" content="Discover skincare, makeup, fragrances and beauty essentials at Glamax Beauty. Your trusted destination for authentic beauty products.">
+  <title>Glamax Beauty | Skincare, Makeup & More</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    <span>✦ Free delivery on orders over ৳1,999</span>
+    <span>✓ 100% authentic products</span>
+    <span>▣ Cash on delivery available</span>
+  </div>
+
+  <header class="site-header">
+    <div class="header-main wrap">
+      <a class="brand" href="#" aria-label="Glamax Beauty home">
+        <img src="assets/logo.svg" alt="Glamax Beauty">
+      </a>
+      <form class="search" id="search-form" role="search">
+        <input id="search-input" type="search" placeholder="Search products, brands..." aria-label="Search products">
+        <button aria-label="Search">⌕</button>
+      </form>
+      <div class="header-actions">
+        <button class="text-action" id="account-btn" type="button"><span>♙</span>Account</button>
+        <button class="text-action" id="wishlist-btn" type="button"><span>♡</span>Wishlist <b id="wish-count">0</b></button>
+        <button class="text-action" id="cart-btn" type="button"><span>🛒</span>Cart <b id="cart-count">0</b></button>
+      </div>
+    </div>
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="active" href="#">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#brands">Brands</a>
+      <a href="#categories">Categories</a>
+      <a href="#products" data-filter="New Arrivals">New Arrivals</a>
+      <a href="#products" data-filter="Best Sellers">Best Sellers</a>
+      <a href="#offers">Offers</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+      <a class="whatsapp-link" id="nav-whatsapp" href="#" target="_blank" rel="noopener">☏ Order on WhatsApp</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AUTHENTIC K-BEAUTY & MORE</p>
+        <h1>Glow With<br><em>Glamax Beauty</em></h1>
+        <p class="hero-sub">Your trusted destination for skincare, makeup, beauty & personal care.</p>
+        <a class="btn" href="#products">Shop Now <span>→</span></a>
+        <div class="trust-row">
+          <span>♡ 100% Authentic</span><span>▣ Fast Delivery</span><span>♢ Secure Payment</span><span>✧ Best Deals</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-glow"></div>
+        <div class="hero-product p-one"><span>ANUA</span><strong>77+</strong><small>HEARTLEAF TONER</small></div>
+        <div class="hero-product p-two"><span>SKIN1004</span><strong>Centella</strong><small>AMPOULE</small></div>
+        <div class="hero-product p-three"><span>BEAUTY OF JOSEON</span><strong>Relief Sun</strong><small>RICE + PROBIOTICS</small></div>
+        <div class="hero-product p-four"><span>CeraVe</span><strong>Foaming</strong><small>FACIAL CLEANSER</small></div>
+        <div class="flower flower-a">✿</div><div class="flower flower-b">✿</div>
+      </div>
+    </section>
+
+    <section class="category-strip wrap" id="categories">
+      <button class="category active" data-category="All"><span>✧</span>All</button>
+      <button class="category" data-category="Cleansers"><span>◉</span>Cleansers</button>
+      <button class="category" data-category="Toners"><span>◌</span>Toners</button>
+      <button class="category" data-category="Serums"><span>♧</span>Serums</button>
+      <button class="category" data-category="Moisturizers"><span>❀</span>Moisturizers</button>
+      <button class="category" data-category="Sunscreens"><span>☼</span>Sunscreens</button>
+      <button class="category" data-category="Makeup"><span>✿</span>Makeup</button>
+      <button class="category" data-category="Body Care"><span>♢</span>Body Care</button>
+      <button class="category" data-category="Hair Care"><span>⌁</span>Hair Care</button>
+      <button class="category" data-category="Fragrances"><span>♜</span>Fragrances</button>
+      <button class="category" data-category="Supplements"><span>✦</span>Supplements</button>
+    </section>
+
+    <section class="promo-grid wrap" id="offers">
+      <article class="promo promo-green"><div><p class="eyebrow">CURATED FOR YOU</p><h2>K-Beauty<br>Collection</h2><p>Explore the best of Korean skincare</p><a href="#products" class="btn btn-small">Shop Now →</a></div><span class="promo-deco">✿</span></article>
+      <article class="promo promo-pink"><div><p class="eyebrow">LIMITED TIME</p><h2>Special Offers<br>Up To <em>40% OFF</em></h2><p>On selected products</p><a href="#products" class="btn btn-small btn-dark">Grab Now →</a></div><span class="sale-sticker">SALE</span></article>
+      <article class="promo promo-peach"><div><p class="eyebrow">JUST LANDED</p><h2>New<br>Arrivals</h2><p>Discover the latest beauty picks</p><a href="#products" class="btn btn-small">Shop Now →</a></div><span class="promo-deco">✧</span></article>
+    </section>
+
+    <section class="products-section wrap" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR BEAUTY PICKS</p><h2 id="product-heading">Best Sellers</h2></div>
+        <div class="product-tools"><span id="result-count">Showing products</span><select id="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No products found. Try another search.</p>
+    </section>
+
+    <section class="brand-band wrap" id="brands">
+      <p class="eyebrow">BEAUTY YOU CAN TRUST</p>
+      <h2>Discover Your Favourite Brands</h2>
+      <div class="brand-names"><span>ANUA</span><span>SKIN1004</span><span>COSRX</span><span>CeraVe</span><span>Beauty of Joseon</span><span>MEDICUBE</span></div>
+    </section>
+
+    <section class="about wrap" id="about">
+      <div class="about-mark">G<span>✿</span></div>
+      <div><p class="eyebrow">A LITTLE ABOUT US</p><h2>Beauty that feels like you.</h2><p>At Glamax Beauty, we believe your everyday routine should feel special. Explore a thoughtfully curated collection of skincare, makeup and personal-care favourites.</p><a href="#contact" class="under-link">Get in touch →</a></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main wrap">
+      <div><img class="footer-logo" src="assets/logo.svg" alt="Glamax Beauty"><p>Your beauty, your glow. Find your next favourite here.</p></div>
+      <div><h3>Quick Links</h3><a href="#products">Shop All</a><a href="#offers">Special Offers</a><a href="#about">About Us</a></div>
+      <div><h3>Customer Care</h3><a href="#contact">Contact Us</a><a href="#contact">Delivery Information</a><a href="#contact">Returns & Exchanges</a></div>
+      <div><h3>Get in Touch</h3><p>Bangladesh</p><p>WhatsApp: <span id="footer-phone">Add your number</span></p><a id="footer-whatsapp" href="#" target="_blank" rel="noopener">Chat with us →</a></div>
+    </div>
+    <div class="copyright"><span>© <span id="year"></span> Glamax Beauty. All rights reserved.</span><span>Demo website · Product details are sample content</span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
